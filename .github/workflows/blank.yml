@@ -1,0 +1,13 @@
+name: Do Nothing Workflow
+
+on:
+  push:
+    branches:
+      - main  # or whichever branch you want to trigger it on
+
+jobs:
+  do-nothing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: No-op
+        run: echo "This workflow does nothing"
